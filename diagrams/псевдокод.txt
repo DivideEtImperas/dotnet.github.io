@@ -1,0 +1,13 @@
+numbers=[3,2,0,-3,4]
+index = 0
+maxIndex = 0
+max = numbers[maxIndex]
+size = numbers.length
+while (index<size) do
+    if(numbers[index]>max) then
+       maxIndex = index 
+       max = number[index]
+    index = index + 1 
+numbers[maxIndex] = numbers[size-1]
+number[size-1]=max 
+print[numbers] 
