@@ -9,11 +9,11 @@
 
 
 Console.WriteLine("Введите пятизначное число:");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine() ?? "");
 
 {
-    if(num/10000 == num % 10 && (num/1000)%10 == (num/10)%10 )
-       Console.WriteLine("Число является полиндромом");
-    else 
-       Console.WriteLine("Число не является полиндромом");   
+    if (num / 10000 == num % 10 && (num / 1000) % 10 == (num / 10) % 10)
+        Console.WriteLine("Число является полиндромом");
+    else
+        Console.WriteLine("Число не является полиндромом");
 }
