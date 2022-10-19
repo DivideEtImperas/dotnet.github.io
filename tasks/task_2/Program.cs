@@ -4,18 +4,18 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3 */
 
 Console.WriteLine("Введите два числа для сравнения");
-int numberA = int.Parse(Console.ReadLine());
-int numberB = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine() ?? "");
+int numberB = int.Parse(Console.ReadLine() ?? "");
 
-if (numberA > numberB )
+if (numberA > numberB)
 {
     Console.Write($"maxA = {numberA} minB = {numberB}");
 }
-if (numberA < numberB )
+if (numberA < numberB)
 {
     Console.Write($"maxB = {numberB} minA = {numberA}");
 }
-if (numberA == numberB);
+if (numberA == numberB)
 {
-Console.Write("Эти числа равны");
+    Console.Write("Эти числа равны");
 }
