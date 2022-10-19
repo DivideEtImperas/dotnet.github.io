@@ -4,11 +4,11 @@
 7 -> нет*/
 
 Console.WriteLine("Введитее число:");
-int numberA = int.Parse(Console.ReadLine());
+int numberA = int.Parse(Console.ReadLine() ?? "");
 
-if(numberA % 2==0)
+if (numberA % 2 == 0)
 {
-Console.WriteLine("Да");
+    Console.WriteLine("Да");
 }
 else
 {
