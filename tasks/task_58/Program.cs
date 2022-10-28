@@ -10,7 +10,7 @@
 int InputInt(string output)
 {
     Console.Write(output);
-    return int.Parse(Console.ReadLine());
+    return int.Parse(Console.ReadLine() ?? "");
 }
 
 void FillArrayRandomNumbers(int[,] array)
@@ -31,7 +31,7 @@ void PrintArray(int[,] array)
         Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i,j] + " ");
+            Console.Write(array[i, j] + " ");
         }
         Console.Write("]");
         Console.WriteLine("");
