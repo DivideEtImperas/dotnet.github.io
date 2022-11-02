@@ -17,7 +17,7 @@ while (currentGame <= totalGames)
     {
         int firstRoll = random.Next(1, 7);
         int secondRoll = random.Next(1, 7);
-        if (firstRoll + secondRoll = 7)
+        if (firstRoll + secondRoll == 7)
         {
             firstPlayerWins += 1;
         }
@@ -27,7 +27,7 @@ while (currentGame <= totalGames)
     {
         int firstRoll = random.Next(1, 7);
         int secondRoll = random.Next(1, 7);
-        if (firstRoll + secondRoll = 8)
+        if (firstRoll + secondRoll == 8)
         {
             secondPlayerWins += 1;
         }
