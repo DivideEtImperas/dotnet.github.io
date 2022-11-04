@@ -10,7 +10,7 @@ m = 3, n = 4.
 int GetNumber(string message)
 {
   Console.WriteLine(message);
-  int number = int.Parse(Console.ReadLine());
+  int number = int.Parse(Console.ReadLine()??"");
   return number;
 }
 
