@@ -6,15 +6,16 @@ int GetNumber(string message)
     int result = 0;
     bool correctInput = false;
 
-    while(true)
+    while (true)
     {
         Console.WriteLine(message);
         correctInput = int.TryParse(Console.ReadLine(), out result);
 
-        if(!correctInput)
-        Console.WriteLine("Вы ввели не корректное число");
+        if (!correctInput)
+            Console.WriteLine("Вы ввели не корректное число");
         Console.WriteLine();
+        return result;
     }
-    return result;
 }
+
 int temp = GetNumber("Введите число");
