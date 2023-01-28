@@ -51,4 +51,7 @@ string Print(int[] collection)
 
 int[] arr = CreateArray();
 Fill(arr);    
+int sum = GetSum(arr);
+Console.WriteLine(Print(arr));
+Console.WriteLine($"sum = {sum}");
 
