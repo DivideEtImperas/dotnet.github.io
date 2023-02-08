@@ -44,13 +44,13 @@ string Print(int[] collection)
   while(index < size)
   {
     int current = collection[index];
-    output = output + $"{current}";
+    output = output + $"{current} ";
     index = index + 1;
   }
   return output;
 }
 
-int[] arr = CreateArray(10);
+int[]arr = CreateArray(10);
 Fill(arr);    
 int sum = GetSum(arr);
 Console.WriteLine(Print(arr));
