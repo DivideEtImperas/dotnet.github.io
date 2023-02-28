@@ -2,19 +2,21 @@
 
 
 int GetNumber(string message)
-{
-    int result = 0;
-    bool correctInput = false;
-
-    while(true)
     {
-        Console.WriteLine(message);
-        correctInput = int.TryParse(Console.ReadLine(), out result);
+        int result = 0;
+        bool correctInput = false;
 
-        if(!correctInput)
-        Console.WriteLine("Вы ввели не корректное число");
-        Console.WriteLine();
+        while(true)
+        {
+            Console.WriteLine(message);
+            correctInput = int.TryParse(Console.ReadLine(), out result);
+
+            if(!correctInput)
+            Console.WriteLine("Вы ввели не корректное число");
+            Console.WriteLine();
+            return result;
+        }
+        
     }
-    return result;
-}
+
 int temp = GetNumber("Введите число");

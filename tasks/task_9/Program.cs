@@ -6,7 +6,7 @@
 */
 
 Console.WriteLine("Введите трехзначное число:");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()??"");
 
 if (num > 99 && num < 1000)
 {

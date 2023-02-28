@@ -10,7 +10,7 @@
 int GetNumber ()
 {
 Console.WriteLine("Введите числа");
-string firstNumberStr = Console.ReadLine();
+string firstNumberStr = (Console.ReadLine()??"");
 int firstNumber = int.Parse(firstNumberStr);
 return firstNumber;
 }

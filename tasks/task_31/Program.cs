@@ -4,7 +4,7 @@
 //89126 -> 5
 
 Console.WriteLine("Введите число:");
-string number = Console.ReadLine();
+string number = (Console.ReadLine()??"");
 int count = 0;
 for (int i = 0; i < number.Length; i++)
 {

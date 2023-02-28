@@ -5,7 +5,7 @@
 
 Console.WriteLine("Введите номер дня недели:");
 
-string numberStr = Console.ReadLine();
+string numberStr = (Console.ReadLine()??"");
 
 if (numberStr == "1")
 {
